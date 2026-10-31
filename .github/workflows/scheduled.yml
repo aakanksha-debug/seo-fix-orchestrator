@@ -70,7 +70,7 @@ jobs:
           node src/cli.js "${args[@]}"
       - name: Upload scout results
         if: steps.input.outputs.ready == 'true'
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: scout-${{ github.run_number }}
           path: out/scout.csv
@@ -108,7 +108,7 @@ jobs:
         run: node src/cli.js queue --in data/control.csv --out out/queue.csv
       - name: Upload queue
         if: steps.input.outputs.ready == 'true'
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: queue-${{ github.run_number }}
           path: |
