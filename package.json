@@ -1,0 +1,16 @@
+{
+  "name": "seo-fix-orchestrator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Read-only planning layer for fixing Ahrefs/Semrush on-page errors: URL counting, crawl tiers, approval gates and fix queue.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "scout": "node src/cli.js scout",
+    "queue": "node src/cli.js queue"
+  },
+  "license": "UNLICENSED"
+}

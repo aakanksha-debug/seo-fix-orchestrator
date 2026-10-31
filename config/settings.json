@@ -1,0 +1,21 @@
+{
+  "targetHealthScore": 90,
+  "fastTrackBelow": 70,
+  "crawlCapMultiplier": 1.2,
+  "minCrawlCap": 50,
+  "ahrefsCapLimit": 5000,
+  "tiers": [
+    { "name": "S", "maxUrls": 300, "weight": 1.0, "frequency": "monthly", "method": "ahrefs-full-crawl" },
+    { "name": "M", "maxUrls": 2000, "weight": 1.2, "frequency": "monthly", "method": "ahrefs-params-removed-and-patterns-excluded" },
+    { "name": "L", "maxUrls": 10000, "weight": 1.5, "frequency": "every-4-weeks", "method": "ahrefs-capped-p1-only" },
+    { "name": "XL", "maxUrls": null, "weight": 1.5, "frequency": "rotation", "method": "screaming-frog-or-folder-sessions" }
+  ],
+  "scout": {
+    "timeoutMs": 15000,
+    "delayMs": 500,
+    "maxSitemaps": 200,
+    "maxTrackedUrls": 500000,
+    "maxBytes": 52428800,
+    "userAgent": "SEOFixOrchestrator-Scout/0.1 (read-only sitemap counter)"
+  }
+}

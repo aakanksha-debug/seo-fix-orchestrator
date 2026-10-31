@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Local inputs and outputs: client data never goes into the repo
+data/
+out/
+logs/
+*.local.csv
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Kill switch file is a local runtime flag, not source
+STOP

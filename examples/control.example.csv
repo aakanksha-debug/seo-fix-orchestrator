@@ -1,0 +1,7 @@
+client_id,domain,status,open_escalation,approval_mode,has_login,cms,backup_possible,health_score,tier
+DEMO001,example.com,Active,no,pm,yes,wordpress,yes,Score 61/Error 78,M
+DEMO002,example.org,Active,no,client,yes,shopify,yes,85,S
+DEMO003,example.net,Paused,no,pm,yes,wordpress,yes,40,S
+DEMO004,example.edu,Active,yes,pm,yes,wordpress,yes,30,L
+DEMO005,example.info,Active,no,,no,,no,50,S
+DEMO006,example.biz,Active,no,pm,yes,webflow,yes,96,S
