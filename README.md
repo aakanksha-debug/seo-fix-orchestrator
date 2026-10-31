@@ -88,6 +88,6 @@ The queue command writes `queue.csv` and `queue-skipped.csv`. Every skipped site
 2. Tiers and Ahrefs bulk settings, applied by hand from the scout output
 3. Approval statuses and access pre-check
 4. Session 1 executor on one pilot site, then scale
-5. Scheduler on the cloud runner
+5. Scheduler on the cloud runner (GitHub Actions: monthly scout, weekday queue)
 
-See `docs/DEPLOYMENT.md` for where this runs.
+See `docs/DEPLOYMENT.md` for where this runs, the input secrets and the kill switch.
